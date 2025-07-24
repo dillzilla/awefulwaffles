@@ -1,7 +1,8 @@
 ---
 layout: default
-title: "Contact Us"
-description: "Visit Awefull Waffles, call us, or send a message. Find our location, hours, and contact information for the best retro diner experience."
+title: "Location, Hours & Contact | Visit Our Retro Diner | Awefull Waffles"
+description: "Visit Awefull Waffles at 123 Retro Street! Open 7 days a week, 7AM-4PM. Call (555) 123-WAFL for reservations. Free parking, wheelchair accessible, family-friendly atmosphere."
+keywords: "restaurant location, hours, phone number, reservations, directions, parking, wheelchair accessible, family restaurant, contact information"
 ---
 
 <!-- Contact Hero Section -->

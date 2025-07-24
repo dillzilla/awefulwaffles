@@ -4,7 +4,7 @@ email: info@awefullwaffles.com
 description: >-
   Awefull Waffles - A retro diner serving the most awefull good waffles in town! 
   Experience classic comfort food with a twist in our vintage-inspired restaurant.
-baseurl: ""
+baseurl: "/awefulwaffles"
 url: "https://awefullwaffles.com"
 twitter_username: awefullwaffles
 github_username: awefullwaffles

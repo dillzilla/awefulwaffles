@@ -1,7 +1,8 @@
 ---
 layout: default
-title: "Menu"
-description: "Explore our delicious menu of classic waffles, breakfast combos, sandwiches, and beverages at Awefull Waffles - your retro diner destination."
+title: "Menu & Prices | Belgian Waffles, Breakfast Combos & More | Awefull Waffles"
+description: "Browse our full menu featuring signature Belgian waffles ($12.99+), hearty breakfast combos, gourmet sandwiches, and specialty beverages. Fresh ingredients, family recipes, and retro atmosphere since 1952."
+keywords: "waffle menu, Belgian waffles prices, breakfast menu, pancakes, bacon, eggs, coffee, diner food, restaurant menu, comfort food prices"
 ---
 
 <!-- Menu Hero Section -->

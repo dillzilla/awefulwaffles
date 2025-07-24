@@ -1,7 +1,8 @@
 ---
 layout: default
-title: "About Us"
-description: "Learn about Awefull Waffles' rich history, family recipes, and commitment to serving the best retro diner experience since 1952."
+title: "Our Story & History | Family-Owned Since 1952 | Awefull Waffles"
+description: "Discover the story behind Awefull Waffles, a family-owned retro diner serving secret recipe waffles since 1952. Meet our team, learn our values, and see why we've won 'Best Breakfast' 5 years running."
+keywords: "restaurant history, family owned restaurant, 1950s diner, vintage restaurant, secret recipes, award winning breakfast, retro dining, family business"
 ---
 
 <!-- About Hero Section -->

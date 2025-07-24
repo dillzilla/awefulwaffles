@@ -1,7 +1,8 @@
 ---
 layout: default
-title: "Home"
-description: "Welcome to Awefull Waffles - the best retro diner serving awefull good waffles, pancakes, and classic comfort food in a vintage atmosphere."
+title: "Best Waffles & Breakfast in Town | Awefull Waffles Retro Diner"
+description: "Experience the best waffles in town at Awefull Waffles! Our retro 1950s diner serves fresh Belgian waffles, classic breakfast combos, and comfort food since 1952. Open 7 days a week with free parking."
+keywords: "best waffles, Belgian waffles, breakfast restaurant, retro diner, vintage restaurant, comfort food, pancakes, bacon, eggs, coffee, family restaurant"
 ---
 
 <!-- Hero Section -->

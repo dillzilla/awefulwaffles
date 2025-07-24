@@ -9,7 +9,7 @@
   
   <!-- SEO meta tags -->
   <meta name="description" content="{{ page.description | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
-  <meta name="keywords" content="waffles, restaurant, diner, breakfast, retro, vintage, {{ site.title }}">
+  <meta name="keywords" content="{{ page.keywords | default: 'waffles, restaurant, diner, breakfast, retro, vintage' }}, {{ site.title }}">
   <meta name="author" content="{{ site.title }}">
   
   <!-- Open Graph meta tags for social media -->
