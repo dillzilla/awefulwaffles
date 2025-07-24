@@ -1,0 +1,59 @@
+# Site settings for Awefull Waffles Restaurant
+title: "Awefull Waffles"
+email: info@awefullwaffles.com
+description: >-
+  Awefull Waffles - A retro diner serving the most awefull good waffles in town! 
+  Experience classic comfort food with a twist in our vintage-inspired restaurant.
+baseurl: ""
+url: "https://awefullwaffles.com"
+twitter_username: awefullwaffles
+github_username: awefullwaffles
+
+# Build settings
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# SEO and Social Media
+logo: /assets/images/logo.png
+social:
+  name: Awefull Waffles
+  links:
+    - https://twitter.com/awefullwaffles
+    - https://facebook.com/awefullwaffles
+    - https://instagram.com/awefullwaffles
+
+# Restaurant specific settings
+restaurant:
+  phone: "(555) 123-WAFL"
+  address: "123 Retro Street, Vintage City, VC 12345"
+  hours:
+    monday: "7:00 AM - 3:00 PM"
+    tuesday: "7:00 AM - 3:00 PM" 
+    wednesday: "7:00 AM - 3:00 PM"
+    thursday: "7:00 AM - 3:00 PM"
+    friday: "7:00 AM - 3:00 PM"
+    saturday: "8:00 AM - 4:00 PM"
+    sunday: "8:00 AM - 4:00 PM"
+
+# Navigation
+header_pages:
+  - index.md
+  - menu.md
+  - about.md
+  - contact.md
+
+# Exclude from processing
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfile
+  - gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/

@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Basic meta tags for SEO -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <!-- SEO meta tags -->
+  <meta name="description" content="Learn about Awefull Waffles&#39; rich history, family recipes, and commitment to serving the best retro diner experience since 1952.">
+  <meta name="keywords" content="waffles, restaurant, diner, breakfast, retro, vintage, Awefull Waffles">
+  <meta name="author" content="Awefull Waffles">
+  
+  <!-- Open Graph meta tags for social media -->
+  <meta property="og:title" content="About Us">
+  <meta property="og:description" content="Learn about Awefull Waffles&#39; rich history, family recipes, and commitment to serving the best retro diner experience since 1952.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="http://0.0.0.0:4000/assets/images/og-image.jpg">
+  <meta property="og:site_name" content="Awefull Waffles">
+  
+  <!-- Twitter Card meta tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="About Us">
+  <meta name="twitter:description" content="Learn about Awefull Waffles&#39; rich history, family recipes, and commitment to serving the best retro diner experience since 1952.">
+  <meta name="twitter:image" content="http://0.0.0.0:4000/assets/images/twitter-card.jpg">
+  
+  <!-- Local Business Schema.org structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "Awefull Waffles",
+    "description": "Awefull Waffles - A retro diner serving the most awefull good waffles in town! Experience classic comfort food with a twist in our vintage-inspired restaurant.",
+    "url": "http://0.0.0.0:4000",
+    "telephone": "(555) 123-WAFL",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "123 Retro Street, Vintage City, VC 12345"
+    },
+    "openingHours": [
+      "Mo-Fr 7:00 AM - 3:00 PM",
+      "Sa 8:00 AM - 4:00 PM",
+      "Su 8:00 AM - 4:00 PM"
+    ],
+    "servesCuisine": "American",
+    "priceRange": "$$"
+  }
+  </script>
+
+  <!-- Page title --><title>About Us | Awefull Waffles</title><!-- Tailwind CSS CDN for quick setup -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Custom Tailwind configuration for retro theme -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'retro-orange': '#FF6B35',
+            'retro-yellow': '#F7BA3E', 
+            'retro-brown': '#8B4513',
+            'retro-cream': '#FFF8DC',
+            'retro-red': '#DC143C'
+          },
+          fontFamily: {
+            'retro': ['Georgia', 'serif'],
+            'display': ['Impact', 'Arial Black', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Custom CSS for retro styling -->
+  <style>
+    /* Retro text shadow and effects */
+    .retro-shadow {
+      text-shadow: 3px 3px 0px #8B4513, 6px 6px 0px rgba(0,0,0,0.2);
+    }
+    
+    /* Vintage button styling */
+    .retro-button {
+      box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+      transition: all 0.3s ease;
+    }
+    
+    .retro-button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 15px 20px rgba(0,0,0,0.2);
+    }
+    
+    /* Checkered pattern background */
+    .checkered-bg {
+      background-image: 
+        linear-gradient(45deg, #FFF8DC 25%, transparent 25%), 
+        linear-gradient(-45deg, #FFF8DC 25%, transparent 25%), 
+        linear-gradient(45deg, transparent 75%, #F5F5DC 75%), 
+        linear-gradient(-45deg, transparent 75%, #F5F5DC 75%);
+      background-size: 20px 20px;
+      background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
+    }
+  </style>
+
+  <!-- Jekyll SEO tag plugin --><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>About Us | Awefull Waffles</title>
+<meta name="generator" content="Jekyll v4.3.4" />
+<meta property="og:title" content="About Us" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Learn about Awefull Waffles’ rich history, family recipes, and commitment to serving the best retro diner experience since 1952." />
+<meta property="og:description" content="Learn about Awefull Waffles’ rich history, family recipes, and commitment to serving the best retro diner experience since 1952." />
+<link rel="canonical" href="http://0.0.0.0:4000/about.html" />
+<meta property="og:url" content="http://0.0.0.0:4000/about.html" />
+<meta property="og:site_name" content="Awefull Waffles" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="About Us" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"Learn about Awefull Waffles’ rich history, family recipes, and commitment to serving the best retro diner experience since 1952.","headline":"About Us","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://0.0.0.0:4000/assets/images/logo.png"}},"url":"http://0.0.0.0:4000/about.html"}</script>
+<!-- End Jekyll SEO tag -->
+<!-- RSS feed link --><link type="application/atom+xml" rel="alternate" href="http://0.0.0.0:4000/feed.xml" title="Awefull Waffles" /><!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico">
+</head>
+
+<body class="bg-retro-cream font-retro">
+  
+  <!-- Header Navigation -->
+  <header class="bg-retro-orange shadow-lg sticky top-0 z-50">
+    <div class="container mx-auto px-4">
+      <nav class="flex items-center justify-between py-4">
+        
+        <!-- Logo/Brand -->
+        <div class="flex items-center">
+          <a href="/" class="text-3xl font-display font-bold text-white retro-shadow hover:text-retro-yellow transition-colors duration-300">
+            🧇 Awefull Waffles
+          </a>
+        </div>
+
+        <!-- Desktop Navigation Menu -->
+        <div class="hidden md:flex space-x-8">
+          <a href="/" class="text-white hover:text-retro-yellow transition-colors duration-300 font-semibold ">
+            Home
+          </a>
+          <a href="/menu.html" class="text-white hover:text-retro-yellow transition-colors duration-300 font-semibold ">
+            Menu
+          </a>
+          <a href="/about.html" class="text-white hover:text-retro-yellow transition-colors duration-300 font-semibold border-b-2 border-retro-yellow">
+            About Us
+          </a>
+          <a href="/contact.html" class="text-white hover:text-retro-yellow transition-colors duration-300 font-semibold ">
+            Contact
+          </a>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <div class="md:hidden">
+          <button id="mobile-menu-button" class="text-white hover:text-retro-yellow focus:outline-none">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+          </button>
+        </div>
+      </nav>
+
+      <!-- Mobile Navigation Menu -->
+      <div id="mobile-menu" class="hidden md:hidden pb-4">
+        <a href="/" class="block py-2 text-white hover:text-retro-yellow transition-colors duration-300 font-semibold">Home</a>
+        <a href="/menu.html" class="block py-2 text-white hover:text-retro-yellow transition-colors duration-300 font-semibold">Menu</a>
+        <a href="/about.html" class="block py-2 text-white hover:text-retro-yellow transition-colors duration-300 font-semibold">About Us</a>
+        <a href="/contact.html" class="block py-2 text-white hover:text-retro-yellow transition-colors duration-300 font-semibold">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content Area -->
+  <main class="min-h-screen">
+    <!-- About Hero Section -->
+<section class="bg-retro-orange text-white py-16">
+  <div class="container mx-auto px-4 text-center">
+    <h1 class="text-5xl md:text-6xl font-display font-bold retro-shadow mb-6">
+      Our Awefull Good Story
+    </h1>
+    <p class="text-xl md:text-2xl max-w-3xl mx-auto">
+      Three generations of waffle excellence, serving up nostalgia and deliciousness since 1952! 🧇
+    </p>
+  </div>
+</section>
+
+<!-- History Section -->
+<section class="py-16 bg-white">
+  <div class="container mx-auto px-4">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      
+      <!-- History Content -->
+      <div>
+        <h2 class="text-4xl font-display font-bold text-retro-brown mb-8 retro-shadow">
+          A Legacy of Flavor
+        </h2>
+        <div class="space-y-6 text-lg text-gray-700">
+          <p>
+            It all started in 1952 when <strong>Harold "Waffle" Johnson</strong> opened the first Awefull Waffles 
+            with a simple dream: to serve the most awefull good waffles in town. Armed with his grandmother's 
+            secret Belgian waffle recipe and an unwavering commitment to quality, Harold transformed a small 
+            corner diner into a beloved community institution.
+          </p>
+          <p>
+            The name "Awefull Waffles" came from Harold's playful sense of humor. When customers would exclaim 
+            "These waffles are awful!" after their first bite, Harold would grin and reply, "Yes, they're 
+            <em>awefull good!</em>" The name stuck, and so did our reputation for exceptional food and service.
+          </p>
+          <p>
+            Over 70 years later, we're still family-owned and operated, now in our third generation. 
+            Harold's grandson, <strong>Bobby Johnson</strong>, carries on the tradition with the same passion, 
+            the same secret recipes, and the same commitment to making every customer feel like family.
+          </p>
+        </div>
+      </div>
+
+      <!-- Visual Element -->
+      <div class="bg-retro-cream p-8 rounded-lg shadow-lg border-4 border-retro-orange">
+        <div class="text-center">
+          <div class="text-8xl mb-6">🏪</div>
+          <h3 class="text-2xl font-bold text-retro-brown mb-4">Since 1952</h3>
+          <div class="space-y-3 text-gray-700">
+            <p><strong>Founded:</strong> September 15, 1952</p>
+            <p><strong>Founder:</strong> Harold "Waffle" Johnson</p>
+            <p><strong>Current Owner:</strong> Bobby Johnson (Grandson)</p>
+            <p><strong>Awards:</strong> "Best Breakfast" 5 years running</p>
+            <p><strong>Waffles Served:</strong> Over 2 million!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Values Section -->
+<section class="py-16 bg-retro-cream">
+  <div class="container mx-auto px-4">
+    <h2 class="text-4xl font-display font-bold text-retro-brown text-center mb-12 retro-shadow">
+      Our Values &amp; Commitment
+    </h2>
+    
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      
+      <!-- Quality Ingredients -->
+      <div class="bg-white p-8 rounded-lg shadow-lg border-4 border-retro-orange text-center">
+        <div class="text-6xl mb-4">🌾</div>
+        <h3 class="text-2xl font-bold text-retro-brown mb-4">Quality Ingredients</h3>
+        <p class="text-gray-700">
+          We source only the finest ingredients: farm-fresh eggs, real vanilla, premium flour, 
+          and pure maple syrup. No shortcuts, no compromises – just the best for our customers.
+        </p>
+      </div>
+
+      <!-- Family Tradition -->
+      <div class="bg-white p-8 rounded-lg shadow-lg border-4 border-retro-orange text-center">
+        <div class="text-6xl mb-4">👨‍👩‍👧‍👦</div>
+        <h3 class="text-2xl font-bold text-retro-brown mb-4">Family Tradition</h3>
+        <p class="text-gray-700">
+          Every recipe is a family heirloom, passed down through generations. We treat every 
+          customer like family because that's what we've always been – one big, waffle-loving family.
+        </p>
+      </div>
+
+      <!-- Community Love -->
+      <div class="bg-white p-8 rounded-lg shadow-lg border-4 border-retro-orange text-center">
+        <div class="text-6xl mb-4">❤️</div>
+        <h3 class="text-2xl font-bold text-retro-brown mb-4">Community Love</h3>
+        <p class="text-gray-700">
+          We're proud to be part of this amazing community. From supporting local schools to 
+          hosting charity events, Awefull Waffles is more than a restaurant – we're neighbors.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Meet the Team Section -->
+<section class="py-16 bg-white">
+  <div class="container mx-auto px-4">
+    <h2 class="text-4xl font-display font-bold text-retro-brown text-center mb-12 retro-shadow">
+      Meet Our Awefull Good Team
+    </h2>
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      
+      <!-- Bobby Johnson - Owner -->
+      <div class="bg-retro-cream p-6 rounded-lg shadow-lg border-l-4 border-retro-orange">
+        <div class="text-center mb-4">
+          <div class="text-6xl mb-2">👨‍🍳</div>
+          <h3 class="text-xl font-bold text-retro-brown">Bobby Johnson</h3>
+          <p class="text-retro-red font-semibold">Owner &amp; Head Chef</p>
+        </div>
+        <p class="text-gray-700 text-sm">
+          Bobby grew up in the kitchen, learning the family recipes from his grandfather Harold. 
+          He's been perfecting the art of waffle-making for over 25 years and still gets excited 
+          about every batch that comes off the griddle.
+        </p>
+      </div>
+
+      <!-- Maria Rodriguez - Manager -->
+      <div class="bg-retro-cream p-6 rounded-lg shadow-lg border-l-4 border-retro-orange">
+        <div class="text-center mb-4">
+          <div class="text-6xl mb-2">👩‍💼</div>
+          <h3 class="text-xl font-bold text-retro-brown">Maria Rodriguez</h3>
+          <p class="text-retro-red font-semibold">Restaurant Manager</p>
+        </div>
+        <p class="text-gray-700 text-sm">
+          Maria has been with Awefull Waffles for 15 years and knows every regular customer by name. 
+          She ensures that every visit feels like coming home, with her warm smile and attention to detail.
+        </p>
+      </div>
+
+      <!-- Chef Tommy -->
+      <div class="bg-retro-cream p-6 rounded-lg shadow-lg border-l-4 border-retro-orange">
+        <div class="text-center mb-4">
+          <div class="text-6xl mb-2">👨‍🍳</div>
+          <h3 class="text-xl font-bold text-retro-brown">Tommy Chen</h3>
+          <p class="text-retro-red font-semibold">Sous Chef</p>
+        </div>
+        <p class="text-gray-700 text-sm">
+          Tommy brings 20 years of culinary experience to our kitchen. His creative spin on classic 
+          recipes has led to some of our most popular seasonal specials. He's a master of both sweet and savory.
+        </p>
+      </div>
+
+      <!-- Sarah - Lead Server -->
+      <div class="bg-retro-cream p-6 rounded-lg shadow-lg border-l-4 border-retro-orange">
+        <div class="text-center mb-4">
+          <div class="text-6xl mb-2">👩‍🏫</div>
+          <h3 class="text-xl font-bold text-retro-brown">Sarah Williams</h3>
+          <p class="text-retro-red font-semibold">Lead Server</p>
+        </div>
+        <p class="text-gray-700 text-sm">
+          Sarah's infectious enthusiasm and knowledge of the menu make her a customer favorite. 
+          She's been serving smiles and waffles for 8 years and knows exactly what you need before you ask.
+        </p>
+      </div>
+
+      <!-- Mike - Barista -->
+      <div class="bg-retro-cream p-6 rounded-lg shadow-lg border-l-4 border-retro-orange">
+        <div class="text-center mb-4">
+          <div class="text-6xl mb-2">☕</div>
+          <h3 class="text-xl font-bold text-retro-brown">Mike Davis</h3>
+          <p class="text-retro-red font-semibold">Head Barista</p>
+        </div>
+        <p class="text-gray-700 text-sm">
+          Mike is our coffee wizard, creating the perfect cup every time. His specialty drinks and 
+          latte art have earned him a following of caffeine enthusiasts who come just for his creations.
+        </p>
+      </div>
+
+      <!-- Jenny - Baker -->
+      <div class="bg-retro-cream p-6 rounded-lg shadow-lg border-l-4 border-retro-orange">
+        <div class="text-center mb-4">
+          <div class="text-6xl mb-2">🧁</div>
+          <h3 class="text-xl font-bold text-retro-brown">Jenny Martinez</h3>
+          <p class="text-retro-red font-semibold">Pastry Chef</p>
+        </div>
+        <p class="text-gray-700 text-sm">
+          Jenny creates all our fresh fruit toppings, whipped creams, and seasonal sauces. 
+          Her artistic presentation and dedication to fresh ingredients make every dish a work of art.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Awards & Recognition Section -->
+<section class="py-16 bg-retro-cream">
+  <div class="container mx-auto px-4">
+    <h2 class="text-4xl font-display font-bold text-retro-brown text-center mb-12 retro-shadow">
+      Awards &amp; Recognition
+    </h2>
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+      
+      <!-- Award 1 -->
+      <div class="bg-white p-6 rounded-lg shadow-lg border-4 border-retro-yellow text-center">
+        <div class="text-4xl mb-3">🏆</div>
+        <h3 class="font-bold text-retro-brown mb-2">Best Breakfast</h3>
+        <p class="text-sm text-gray-600">City Magazine<br />2019-2024</p>
+      </div>
+
+      <!-- Award 2 -->
+      <div class="bg-white p-6 rounded-lg shadow-lg border-4 border-retro-yellow text-center">
+        <div class="text-4xl mb-3">⭐</div>
+        <h3 class="font-bold text-retro-brown mb-2">Reader's Choice</h3>
+        <p class="text-sm text-gray-600">Local News<br />2023</p>
+      </div>
+
+      <!-- Award 3 -->
+      <div class="bg-white p-6 rounded-lg shadow-lg border-4 border-retro-yellow text-center">
+        <div class="text-4xl mb-3">📰</div>
+        <h3 class="font-bold text-retro-brown mb-2">Featured Restaurant</h3>
+        <p class="text-sm text-gray-600">Retro Dining Magazine<br />2022</p>
+      </div>
+
+      <!-- Award 4 -->
+      <div class="bg-white p-6 rounded-lg shadow-lg border-4 border-retro-yellow text-center">
+        <div class="text-4xl mb-3">❤️</div>
+        <h3 class="font-bold text-retro-brown mb-2">Community Hero</h3>
+        <p class="text-sm text-gray-600">Chamber of Commerce<br />2021</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Mission Statement Section -->
+<section class="py-16 bg-retro-brown text-white">
+  <div class="container mx-auto px-4">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-4xl font-display font-bold mb-8 retro-shadow">
+        Our Mission
+      </h2>
+      <blockquote class="text-xl md:text-2xl italic mb-8 leading-relaxed">
+        "To serve not just awefull good waffles, but to create moments of joy, comfort, and connection. 
+        Every customer who walks through our doors should feel the warmth of our family tradition and 
+        leave with a smile as big as their appetite was when they arrived."
+      </blockquote>
+      <p class="text-lg">
+        — Bobby Johnson, Owner &amp; Third-Generation Waffle Maker
+      </p>
+      
+      <!-- Fun Facts -->
+      <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+        <div>
+          <div class="text-3xl font-bold text-retro-yellow">2,000,000+</div>
+          <p class="text-retro-cream">Waffles Served</p>
+        </div>
+        <div>
+          <div class="text-3xl font-bold text-retro-yellow">70+</div>
+          <p class="text-retro-cream">Years in Business</p>
+        </div>
+        <div>
+          <div class="text-3xl font-bold text-retro-yellow">50,000+</div>
+          <p class="text-retro-cream">Happy Customers</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Call to Action -->
+<section class="py-16 bg-retro-orange text-white">
+  <div class="container mx-auto px-4 text-center">
+    <h2 class="text-4xl font-display font-bold mb-6 retro-shadow">
+      Become Part of Our Story
+    </h2>
+    <p class="text-xl mb-8 max-w-2xl mx-auto">
+      We'd love to meet you and share our passion for awefull good food! 
+      Come experience the tradition that has been bringing families together for over 70 years.
+    </p>
+    <div class="space-y-4 md:space-y-0 md:space-x-6 md:flex md:justify-center">
+      <a href="/menu.html" class="inline-block bg-retro-yellow text-retro-brown px-8 py-4 rounded-full font-bold text-lg retro-button hover:bg-yellow-300">
+        🍽️ View Our Menu
+      </a>
+      <a href="/contact.html" class="inline-block bg-transparent border-2 border-white text-white px-8 py-4 rounded-full font-bold text-lg retro-button hover:bg-white hover:text-retro-orange">
+         📍 Visit Us Today
+      </a>
+    </div>
+  </div>
+</section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-retro-brown text-white py-12">
+    <div class="container mx-auto px-4">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <!-- Contact Information -->
+        <div>
+          <h3 class="text-xl font-bold mb-4 text-retro-yellow">Contact Info</h3>
+          <p class="mb-2">📍 123 Retro Street, Vintage City, VC 12345</p>
+          <p class="mb-2">📞 (555) 123-WAFL</p>
+          <p class="mb-2">✉️ info@awefullwaffles.com</p>
+        </div>
+
+        <!-- Hours of Operation -->
+        <div>
+          <h3 class="text-xl font-bold mb-4 text-retro-yellow">Hours</h3>
+          <p class="mb-1">Mon-Fri: 7:00 AM - 3:00 PM</p>
+          <p class="mb-1">Saturday: 8:00 AM - 4:00 PM</p>
+          <p class="mb-1">Sunday: 8:00 AM - 4:00 PM</p>
+        </div>
+
+        <!-- Social Media Links -->
+        <div>
+          <h3 class="text-xl font-bold mb-4 text-retro-yellow">Follow Us</h3>
+          <div class="flex space-x-4">
+            <a href="https://facebook.com/awefullwaffles" class="text-white hover:text-retro-yellow transition-colors duration-300" aria-label="Facebook">
+              📘 Facebook
+            </a>
+            <a href="https://instagram.com/awefullwaffles" class="text-white hover:text-retro-yellow transition-colors duration-300" aria-label="Instagram">
+              📷 Instagram
+            </a>
+            <a href="https://twitter.com/awefullwaffles" class="text-white hover:text-retro-yellow transition-colors duration-300" aria-label="Twitter">
+              🐦 Twitter
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Copyright -->
+      <div class="border-t border-retro-orange mt-8 pt-8 text-center">
+        <p>&copy; 2025 Awefull Waffles. All rights reserved. Made with ❤️ and lots of syrup!</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Mobile Menu JavaScript -->
+  <script>
+    // Mobile menu toggle functionality
+    document.getElementById('mobile-menu-button').addEventListener('click', function() {
+      const mobileMenu = document.getElementById('mobile-menu');
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    // Close mobile menu when clicking on a link
+    document.querySelectorAll('#mobile-menu a').forEach(link => {
+      link.addEventListener('click', function() {
+        document.getElementById('mobile-menu').classList.add('hidden');
+      });
+    });
+  </script>
+
+</body>
+</html>

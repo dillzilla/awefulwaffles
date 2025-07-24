@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Basic meta tags for SEO -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <!-- SEO meta tags -->
+  <meta name="description" content="Visit Awefull Waffles, call us, or send a message. Find our location, hours, and contact information for the best retro diner experience.">
+  <meta name="keywords" content="waffles, restaurant, diner, breakfast, retro, vintage, Awefull Waffles">
+  <meta name="author" content="Awefull Waffles">
+  
+  <!-- Open Graph meta tags for social media -->
+  <meta property="og:title" content="Contact Us">
+  <meta property="og:description" content="Visit Awefull Waffles, call us, or send a message. Find our location, hours, and contact information for the best retro diner experience.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="http://0.0.0.0:4000/assets/images/og-image.jpg">
+  <meta property="og:site_name" content="Awefull Waffles">
+  
+  <!-- Twitter Card meta tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Contact Us">
+  <meta name="twitter:description" content="Visit Awefull Waffles, call us, or send a message. Find our location, hours, and contact information for the best retro diner experience.">
+  <meta name="twitter:image" content="http://0.0.0.0:4000/assets/images/twitter-card.jpg">
+  
+  <!-- Local Business Schema.org structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "Awefull Waffles",
+    "description": "Awefull Waffles - A retro diner serving the most awefull good waffles in town! Experience classic comfort food with a twist in our vintage-inspired restaurant.",
+    "url": "http://0.0.0.0:4000",
+    "telephone": "(555) 123-WAFL",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "123 Retro Street, Vintage City, VC 12345"
+    },
+    "openingHours": [
+      "Mo-Fr 7:00 AM - 3:00 PM",
+      "Sa 8:00 AM - 4:00 PM",
+      "Su 8:00 AM - 4:00 PM"
+    ],
+    "servesCuisine": "American",
+    "priceRange": "$$"
+  }
+  </script>
+
+  <!-- Page title --><title>Contact Us | Awefull Waffles</title><!-- Tailwind CSS CDN for quick setup -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Custom Tailwind configuration for retro theme -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'retro-orange': '#FF6B35',
+            'retro-yellow': '#F7BA3E', 
+            'retro-brown': '#8B4513',
+            'retro-cream': '#FFF8DC',
+            'retro-red': '#DC143C'
+          },
+          fontFamily: {
+            'retro': ['Georgia', 'serif'],
+            'display': ['Impact', 'Arial Black', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Custom CSS for retro styling -->
+  <style>
+    /* Retro text shadow and effects */
+    .retro-shadow {
+      text-shadow: 3px 3px 0px #8B4513, 6px 6px 0px rgba(0,0,0,0.2);
+    }
+    
+    /* Vintage button styling */
+    .retro-button {
+      box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+      transition: all 0.3s ease;
+    }
+    
+    .retro-button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 15px 20px rgba(0,0,0,0.2);
+    }
+    
+    /* Checkered pattern background */
+    .checkered-bg {
+      background-image: 
+        linear-gradient(45deg, #FFF8DC 25%, transparent 25%), 
+        linear-gradient(-45deg, #FFF8DC 25%, transparent 25%), 
+        linear-gradient(45deg, transparent 75%, #F5F5DC 75%), 
+        linear-gradient(-45deg, transparent 75%, #F5F5DC 75%);
+      background-size: 20px 20px;
+      background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
+    }
+  </style>
+
+  <!-- Jekyll SEO tag plugin --><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Contact Us | Awefull Waffles</title>
+<meta name="generator" content="Jekyll v4.3.4" />
+<meta property="og:title" content="Contact Us" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Visit Awefull Waffles, call us, or send a message. Find our location, hours, and contact information for the best retro diner experience." />
+<meta property="og:description" content="Visit Awefull Waffles, call us, or send a message. Find our location, hours, and contact information for the best retro diner experience." />
+<link rel="canonical" href="http://0.0.0.0:4000/contact.html" />
+<meta property="og:url" content="http://0.0.0.0:4000/contact.html" />
+<meta property="og:site_name" content="Awefull Waffles" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Contact Us" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"Visit Awefull Waffles, call us, or send a message. Find our location, hours, and contact information for the best retro diner experience.","headline":"Contact Us","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://0.0.0.0:4000/assets/images/logo.png"}},"url":"http://0.0.0.0:4000/contact.html"}</script>
+<!-- End Jekyll SEO tag -->
+<!-- RSS feed link --><link type="application/atom+xml" rel="alternate" href="http://0.0.0.0:4000/feed.xml" title="Awefull Waffles" /><!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico">
+</head>
+
+<body class="bg-retro-cream font-retro">
+  
+  <!-- Header Navigation -->
+  <header class="bg-retro-orange shadow-lg sticky top-0 z-50">
+    <div class="container mx-auto px-4">
+      <nav class="flex items-center justify-between py-4">
+        
+        <!-- Logo/Brand -->
+        <div class="flex items-center">
+          <a href="/" class="text-3xl font-display font-bold text-white retro-shadow hover:text-retro-yellow transition-colors duration-300">
+            🧇 Awefull Waffles
+          </a>
+        </div>
+
+        <!-- Desktop Navigation Menu -->
+        <div class="hidden md:flex space-x-8">
+          <a href="/" class="text-white hover:text-retro-yellow transition-colors duration-300 font-semibold ">
+            Home
+          </a>
+          <a href="/menu.html" class="text-white hover:text-retro-yellow transition-colors duration-300 font-semibold ">
+            Menu
+          </a>
+          <a href="/about.html" class="text-white hover:text-retro-yellow transition-colors duration-300 font-semibold ">
+            About Us
+          </a>
+          <a href="/contact.html" class="text-white hover:text-retro-yellow transition-colors duration-300 font-semibold border-b-2 border-retro-yellow">
+            Contact
+          </a>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <div class="md:hidden">
+          <button id="mobile-menu-button" class="text-white hover:text-retro-yellow focus:outline-none">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+          </button>
+        </div>
+      </nav>
+
+      <!-- Mobile Navigation Menu -->
+      <div id="mobile-menu" class="hidden md:hidden pb-4">
+        <a href="/" class="block py-2 text-white hover:text-retro-yellow transition-colors duration-300 font-semibold">Home</a>
+        <a href="/menu.html" class="block py-2 text-white hover:text-retro-yellow transition-colors duration-300 font-semibold">Menu</a>
+        <a href="/about.html" class="block py-2 text-white hover:text-retro-yellow transition-colors duration-300 font-semibold">About Us</a>
+        <a href="/contact.html" class="block py-2 text-white hover:text-retro-yellow transition-colors duration-300 font-semibold">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content Area -->
+  <main class="min-h-screen">
+    <!-- Contact Hero Section -->
+<section class="bg-retro-orange text-white py-16">
+  <div class="container mx-auto px-4 text-center">
+    <h1 class="text-5xl md:text-6xl font-display font-bold retro-shadow mb-6">
+      Get In Touch!
+    </h1>
+    <p class="text-xl md:text-2xl max-w-3xl mx-auto">
+      We'd love to hear from you! Come visit us, give us a call, or drop us a line. 
+      We're always here to serve you with a smile! 🧇
+    </p>
+  </div>
+</section>
+
+<!-- Contact Information Section -->
+<section class="py-16 bg-white">
+  <div class="container mx-auto px-4">
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+      
+      <!-- Location Info -->
+      <div class="bg-retro-cream p-8 rounded-lg shadow-lg border-4 border-retro-orange text-center">
+        <div class="text-6xl mb-4">📍</div>
+        <h3 class="text-2xl font-bold text-retro-brown mb-4">Visit Us</h3>
+        <div class="space-y-2 text-gray-700">
+          <p class="font-semibold">123 Retro Street, Vintage City, VC 12345</p>
+          <p class="text-sm">Easy parking available</p>
+          <p class="text-sm">Wheelchair accessible</p>
+          <p class="text-sm">Family-friendly atmosphere</p>
+        </div>
+        <a href="https://maps.google.com/?q=123+Retro+Street%2C+Vintage+City%2C+VC+12345" target="_blank" class="inline-block mt-4 bg-retro-orange text-white px-6 py-3 rounded-full font-bold hover:bg-orange-600 transition-colors duration-300">
+          🗺️ Get Directions
+        </a>
+      </div>
+
+      <!-- Phone Info -->
+      <div class="bg-retro-cream p-8 rounded-lg shadow-lg border-4 border-retro-orange text-center">
+        <div class="text-6xl mb-4">📞</div>
+        <h3 class="text-2xl font-bold text-retro-brown mb-4">Call Us</h3>
+        <div class="space-y-2 text-gray-700">
+          <p class="font-semibold text-xl">(555) 123-WAFL</p>
+          <p class="text-sm">Order takeout &amp; delivery</p>
+          <p class="text-sm">Make reservations</p>
+          <p class="text-sm">Ask about catering</p>
+        </div>
+        <a href="tel:(555) 123-WAFL" class="inline-block mt-4 bg-retro-yellow text-retro-brown px-6 py-3 rounded-full font-bold hover:bg-yellow-300 transition-colors duration-300">
+          📱 Call Now
+        </a>
+      </div>
+
+      <!-- Email Info -->
+      <div class="bg-retro-cream p-8 rounded-lg shadow-lg border-4 border-retro-orange text-center">
+        <div class="text-6xl mb-4">✉️</div>
+        <h3 class="text-2xl font-bold text-retro-brown mb-4">Email Us</h3>
+        <div class="space-y-2 text-gray-700">
+          <p class="font-semibold">info@awefullwaffles.com</p>
+          <p class="text-sm">General inquiries</p>
+          <p class="text-sm">Catering requests</p>
+          <p class="text-sm">Feedback &amp; suggestions</p>
+        </div>
+        <a href="mailto:info@awefullwaffles.com" class="inline-block mt-4 bg-retro-red text-white px-6 py-3 rounded-full font-bold hover:bg-red-700 transition-colors duration-300">
+          📧 Send Email
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Hours of Operation -->
+<section class="py-16 bg-retro-cream">
+  <div class="container mx-auto px-4">
+    <h2 class="text-4xl font-display font-bold text-retro-brown text-center mb-12 retro-shadow">
+      Hours of Operation
+    </h2>
+    
+    <div class="max-w-2xl mx-auto">
+      <div class="bg-white p-8 rounded-lg shadow-lg border-4 border-retro-orange">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          
+          <!-- Weekdays -->
+          <div class="text-center">
+            <h3 class="text-2xl font-bold text-retro-brown mb-4">Weekdays</h3>
+            <div class="space-y-3">
+              <div class="flex justify-between">
+                <span class="font-semibold">Monday</span>
+                <span>7:00 AM - 3:00 PM</span>
+              </div>
+              <div class="flex justify-between">
+                <span class="font-semibold">Tuesday</span>
+                <span>7:00 AM - 3:00 PM</span>
+              </div>
+              <div class="flex justify-between">
+                <span class="font-semibold">Wednesday</span>
+                <span>7:00 AM - 3:00 PM</span>
+              </div>
+              <div class="flex justify-between">
+                <span class="font-semibold">Thursday</span>
+                <span>7:00 AM - 3:00 PM</span>
+              </div>
+              <div class="flex justify-between">
+                <span class="font-semibold">Friday</span>
+                <span>7:00 AM - 3:00 PM</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Weekends -->
+          <div class="text-center">
+            <h3 class="text-2xl font-bold text-retro-brown mb-4">Weekends</h3>
+            <div class="space-y-3">
+              <div class="flex justify-between">
+                <span class="font-semibold">Saturday</span>
+                <span>8:00 AM - 4:00 PM</span>
+              </div>
+              <div class="flex justify-between">
+                <span class="font-semibold">Sunday</span>
+                <span>8:00 AM - 4:00 PM</span>
+              </div>
+            </div>
+            <div class="mt-6 p-4 bg-retro-cream rounded-lg">
+              <p class="text-sm text-gray-600">
+                <strong>Note:</strong> We're closed on major holidays. 
+                Please call ahead for special holiday hours.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Form Section -->
+<section class="py-16 bg-white">
+  <div class="container mx-auto px-4">
+    <h2 class="text-4xl font-display font-bold text-retro-brown text-center mb-12 retro-shadow">
+      Send Us a Message
+    </h2>
+    
+    <div class="max-w-3xl mx-auto">
+      <div class="bg-retro-cream p-8 rounded-lg shadow-lg border-4 border-retro-orange">
+        
+        <!-- Contact Form -->
+        <form action="#" method="POST" class="space-y-6" id="contact-form">
+          
+          <!-- Name and Email Row -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div>
+              <label for="name" class="block text-retro-brown font-bold mb-2">Your Name *</label>
+              <input type="text" id="name" name="name" required="" class="w-full px-4 py-3 border-2 border-retro-orange rounded-lg focus:outline-none focus:ring-2 focus:ring-retro-yellow" />
+            </div>
+            <div>
+              <label for="email" class="block text-retro-brown font-bold mb-2">Email Address *</label>
+              <input type="email" id="email" name="email" required="" class="w-full px-4 py-3 border-2 border-retro-orange rounded-lg focus:outline-none focus:ring-2 focus:ring-retro-yellow" />
+            </div>
+          </div>
+
+          <!-- Phone and Subject Row -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div>
+              <label for="phone" class="block text-retro-brown font-bold mb-2">Phone Number</label>
+              <input type="tel" id="phone" name="phone" class="w-full px-4 py-3 border-2 border-retro-orange rounded-lg focus:outline-none focus:ring-2 focus:ring-retro-yellow" />
+            </div>
+            <div>
+              <label for="subject" class="block text-retro-brown font-bold mb-2">Subject *</label>
+              <select id="subject" name="subject" required="" class="w-full px-4 py-3 border-2 border-retro-orange rounded-lg focus:outline-none focus:ring-2 focus:ring-retro-yellow">
+                <option value="">Select a subject...</option>
+                <option value="reservation">Reservation Request</option>
+                <option value="catering">Catering Inquiry</option>
+                <option value="feedback">Feedback</option>
+                <option value="complaint">Complaint</option>
+                <option value="compliment">Compliment</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Message -->
+          <div>
+            <label for="message" class="block text-retro-brown font-bold mb-2">Message *</label>
+            <textarea id="message" name="message" rows="6" required="" placeholder="Tell us what's on your mind! We love hearing from our customers..." class="w-full px-4 py-3 border-2 border-retro-orange rounded-lg focus:outline-none focus:ring-2 focus:ring-retro-yellow resize-vertical"></textarea>
+          </div>
+
+          <!-- Preferred Contact Method -->
+          <div>
+            <label class="block text-retro-brown font-bold mb-2">Preferred Response Method</label>
+            <div class="flex flex-wrap gap-4">
+              <label class="flex items-center">
+                <input type="radio" name="contact_method" value="email" checked="" class="mr-2" />
+                <span>Email</span>
+              </label>
+              <label class="flex items-center">
+                <input type="radio" name="contact_method" value="phone" class="mr-2" />
+                <span>Phone Call</span>
+              </label>
+              <label class="flex items-center">
+                <input type="radio" name="contact_method" value="text" class="mr-2" />
+                <span>Text Message</span>
+              </label>
+            </div>
+          </div>
+
+          <!-- Submit Button -->
+          <div class="text-center">
+            <button type="submit" class="bg-retro-orange text-white px-8 py-4 rounded-full font-bold text-lg retro-button hover:bg-orange-600 transition-colors duration-300">
+              🚀 Send Message
+            </button>
+          </div>
+
+          <!-- Form Note -->
+          <div class="text-center text-sm text-gray-600">
+            <p>* Required fields</p>
+            <p>We typically respond within 24 hours during business days.</p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Map Section -->
+<section class="py-16 bg-retro-cream">
+  <div class="container mx-auto px-4">
+    <h2 class="text-4xl font-display font-bold text-retro-brown text-center mb-12 retro-shadow">
+      Find Us on the Map
+    </h2>
+    
+    <!-- Map Placeholder -->
+    <div class="max-w-4xl mx-auto">
+      <div class="bg-white p-4 rounded-lg shadow-lg border-4 border-retro-orange">
+        <div class="bg-gray-200 h-96 rounded-lg flex items-center justify-center relative overflow-hidden">
+          <!-- Placeholder for map - replace with actual Google Maps embed or similar -->
+          <div class="text-center">
+            <div class="text-6xl mb-4">🗺️</div>
+            <h3 class="text-2xl font-bold text-gray-600 mb-2">Interactive Map</h3>
+            <p class="text-gray-500 mb-4">123 Retro Street, Vintage City, VC 12345</p>
+            <a href="https://maps.google.com/?q=123+Retro+Street%2C+Vintage+City%2C+VC+12345" target="_blank" class="inline-block bg-retro-orange text-white px-6 py-3 rounded-full font-bold hover:bg-orange-600 transition-colors duration-300">
+              🧭 Open in Google Maps
+            </a>
+          </div>
+          
+          <!-- Decorative map-like elements -->
+          <div class="absolute top-4 left-4 w-8 h-8 bg-retro-red rounded-full flex items-center justify-center text-white font-bold">
+            📍
+          </div>
+          <div class="absolute bottom-4 right-4 text-xs text-gray-400">
+            © Map Data Providers
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Location Details -->
+    <div class="max-w-2xl mx-auto mt-8 text-center">
+      <div class="bg-white p-6 rounded-lg shadow-lg border-l-4 border-retro-orange">
+        <h3 class="text-xl font-bold text-retro-brown mb-4">Getting Here</h3>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-sm text-gray-700">
+          <div>
+            <strong>🚗 By Car:</strong><br />
+            Free parking available in our lot and on surrounding streets.
+          </div>
+          <div>
+            <strong>🚌 Public Transit:</strong><br />
+            Bus routes 12, 45, and 78 stop within 2 blocks of our location.
+          </div>
+          <div>
+            <strong>🚶 Walking:</strong><br />
+            Located in the heart of downtown, easy walking distance from hotels.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Social Media & Follow Us -->
+<section class="py-16 bg-retro-brown text-white">
+  <div class="container mx-auto px-4 text-center">
+    <h2 class="text-4xl font-display font-bold mb-8 retro-shadow">
+      Follow Our Awefull Adventures
+    </h2>
+    <p class="text-xl mb-8 max-w-2xl mx-auto">
+      Stay connected with us on social media for the latest updates, special offers, 
+      and behind-the-scenes peeks at our delicious creations!
+    </p>
+    
+    <!-- Social Media Links -->
+    <div class="flex justify-center space-x-6 mb-8">
+      <a href="https://facebook.com/awefullwaffles" target="_blank" class="bg-retro-yellow text-retro-brown px-6 py-4 rounded-full font-bold hover:bg-yellow-300 transition-colors duration-300">
+        📘 Facebook
+      </a>
+      <a href="https://instagram.com/awefullwaffles" target="_blank" class="bg-retro-yellow text-retro-brown px-6 py-4 rounded-full font-bold hover:bg-yellow-300 transition-colors duration-300">
+        📷 Instagram
+      </a>
+      <a href="https://twitter.com/awefullwaffles" target="_blank" class="bg-retro-yellow text-retro-brown px-6 py-4 rounded-full font-bold hover:bg-yellow-300 transition-colors duration-300">
+        🐦 Twitter
+      </a>
+    </div>
+
+    <!-- Newsletter Signup -->
+    <div class="max-w-md mx-auto">
+      <h3 class="text-xl font-bold mb-4">Join Our Newsletter</h3>
+      <div class="flex">
+        <input type="email" placeholder="Your email address" class="flex-1 px-4 py-3 rounded-l-full text-gray-800 focus:outline-none" />
+        <button class="bg-retro-orange px-6 py-3 rounded-r-full font-bold hover:bg-orange-600 transition-colors duration-300">
+          Subscribe
+        </button>
+      </div>
+      <p class="text-sm text-retro-cream mt-2">Get special offers and waffle news delivered to your inbox!</p>
+    </div>
+  </div>
+</section>
+
+<!-- JavaScript for form handling -->
+<script>
+// Simple form validation and submission handler
+document.getElementById('contact-form').addEventListener('submit', function(e) {
+  e.preventDefault();
+  
+  // Get form data
+  const formData = new FormData(this);
+  const name = formData.get('name');
+  const email = formData.get('email');
+  const message = formData.get('message');
+  
+  // Basic validation
+  if (!name || !email || !message) {
+    alert('Please fill in all required fields.');
+    return;
+  }
+  
+  // Simulate form submission
+  alert('Thank you for your message! We\'ll get back to you soon. In the meantime, why not check out our menu?');
+  
+  // Reset form
+  this.reset();
+});
+
+// Add smooth scrolling for anchor links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault();
+    const target = document.querySelector(this.getAttribute('href'));
+    if (target) {
+      target.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }
+  });
+});
+</script>
+
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-retro-brown text-white py-12">
+    <div class="container mx-auto px-4">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <!-- Contact Information -->
+        <div>
+          <h3 class="text-xl font-bold mb-4 text-retro-yellow">Contact Info</h3>
+          <p class="mb-2">📍 123 Retro Street, Vintage City, VC 12345</p>
+          <p class="mb-2">📞 (555) 123-WAFL</p>
+          <p class="mb-2">✉️ info@awefullwaffles.com</p>
+        </div>
+
+        <!-- Hours of Operation -->
+        <div>
+          <h3 class="text-xl font-bold mb-4 text-retro-yellow">Hours</h3>
+          <p class="mb-1">Mon-Fri: 7:00 AM - 3:00 PM</p>
+          <p class="mb-1">Saturday: 8:00 AM - 4:00 PM</p>
+          <p class="mb-1">Sunday: 8:00 AM - 4:00 PM</p>
+        </div>
+
+        <!-- Social Media Links -->
+        <div>
+          <h3 class="text-xl font-bold mb-4 text-retro-yellow">Follow Us</h3>
+          <div class="flex space-x-4">
+            <a href="https://facebook.com/awefullwaffles" class="text-white hover:text-retro-yellow transition-colors duration-300" aria-label="Facebook">
+              📘 Facebook
+            </a>
+            <a href="https://instagram.com/awefullwaffles" class="text-white hover:text-retro-yellow transition-colors duration-300" aria-label="Instagram">
+              📷 Instagram
+            </a>
+            <a href="https://twitter.com/awefullwaffles" class="text-white hover:text-retro-yellow transition-colors duration-300" aria-label="Twitter">
+              🐦 Twitter
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Copyright -->
+      <div class="border-t border-retro-orange mt-8 pt-8 text-center">
+        <p>&copy; 2025 Awefull Waffles. All rights reserved. Made with ❤️ and lots of syrup!</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Mobile Menu JavaScript -->
+  <script>
+    // Mobile menu toggle functionality
+    document.getElementById('mobile-menu-button').addEventListener('click', function() {
+      const mobileMenu = document.getElementById('mobile-menu');
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    // Close mobile menu when clicking on a link
+    document.querySelectorAll('#mobile-menu a').forEach(link => {
+      link.addEventListener('click', function() {
+        document.getElementById('mobile-menu').classList.add('hidden');
+      });
+    });
+  </script>
+
+</body>
+</html>

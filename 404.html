@@ -1,0 +1,118 @@
+---
+layout: default
+title: "Page Not Found"
+description: "The page you're looking for doesn't exist, but don't worry - we've still got awefull good waffles waiting for you!"
+permalink: /404.html
+---
+
+<!-- 404 Error Section -->
+<section class="py-20 bg-retro-cream min-h-screen flex items-center">
+  <div class="container mx-auto px-4 text-center">
+    
+    <!-- Large 404 -->
+    <div class="mb-8">
+      <h1 class="text-9xl font-display font-bold text-retro-orange retro-shadow">404</h1>
+    </div>
+
+    <!-- Waffle Icon -->
+    <div class="text-8xl mb-8">🧇</div>
+
+    <!-- Error Message -->
+    <h2 class="text-4xl font-display font-bold text-retro-brown mb-6 retro-shadow">
+      Oops! This Page is Missing!
+    </h2>
+    
+    <p class="text-xl text-gray-700 mb-8 max-w-2xl mx-auto">
+      Looks like this page got lost on its way to the kitchen! 
+      Don't worry though - our waffles are still here and they're still awefull good.
+    </p>
+
+    <!-- Suggestions -->
+    <div class="bg-white p-8 rounded-lg shadow-lg border-4 border-retro-orange max-w-2xl mx-auto mb-8">
+      <h3 class="text-2xl font-bold text-retro-brown mb-4">What can you do?</h3>
+      <div class="space-y-3 text-left">
+        <p class="flex items-center">
+          <span class="text-2xl mr-3">🏠</span>
+          <span>Go back to our <a href="{{ '/' | relative_url }}" class="text-retro-orange font-bold hover:underline">Homepage</a></span>
+        </p>
+        <p class="flex items-center">
+          <span class="text-2xl mr-3">🍽️</span>
+          <span>Check out our delicious <a href="{{ '/menu.html' | relative_url }}" class="text-retro-orange font-bold hover:underline">Menu</a></span>
+        </p>
+        <p class="flex items-center">
+          <span class="text-2xl mr-3">📞</span>
+          <span>Get in touch with us on our <a href="{{ '/contact.html' | relative_url }}" class="text-retro-orange font-bold hover:underline">Contact page</a></span>
+        </p>
+        <p class="flex items-center">
+          <span class="text-2xl mr-3">👨‍👩‍👧‍👦</span>
+          <span>Learn more <a href="{{ '/about.html' | relative_url }}" class="text-retro-orange font-bold hover:underline">About Us</a></span>
+        </p>
+      </div>
+    </div>
+
+    <!-- Action Buttons -->
+    <div class="space-y-4 md:space-y-0 md:space-x-6 md:flex md:justify-center">
+      <a href="{{ '/' | relative_url }}" 
+         class="inline-block bg-retro-orange text-white px-8 py-4 rounded-full font-bold text-lg retro-button hover:bg-orange-600">
+        🏠 Take Me Home
+      </a>
+      <a href="{{ '/menu.html' | relative_url }}" 
+         class="inline-block bg-retro-yellow text-retro-brown px-8 py-4 rounded-full font-bold text-lg retro-button hover:bg-yellow-300">
+        🧇 See Our Waffles
+      </a>
+    </div>
+
+    <!-- Fun Message -->
+    <div class="mt-12 p-6 bg-retro-brown text-white rounded-lg max-w-lg mx-auto">
+      <p class="text-lg italic">
+        "Even when you're lost, you're always welcome at Awefull Waffles! 
+        Come find us instead - we've got fresh coffee brewing!"
+      </p>
+      <p class="text-sm mt-2 text-retro-yellow">
+        - Bobby Johnson, Owner
+      </p>
+    </div>
+
+    <!-- Back to Previous Page -->
+    <div class="mt-8">
+      <button onclick="history.back()" 
+              class="text-retro-orange hover:text-orange-600 font-bold underline">
+        ← Go back to previous page
+      </button>
+    </div>
+
+  </div>
+</section>
+
+<!-- JavaScript for additional functionality -->
+<script>
+// Add some fun animation to the 404 number
+document.addEventListener('DOMContentLoaded', function() {
+  const heading = document.querySelector('h1');
+  if (heading) {
+    // Add a subtle shake animation when the page loads
+    setTimeout(() => {
+      heading.style.animation = 'shake 0.5s ease-in-out';
+    }, 500);
+  }
+});
+
+// Add CSS animation for the shake effect
+const style = document.createElement('style');
+style.textContent = `
+  @keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    75% { transform: translateX(5px); }
+  }
+`;
+document.head.appendChild(style);
+
+// Track 404 errors for analytics (if you have analytics set up)
+if (typeof gtag !== 'undefined') {
+  gtag('event', 'page_view', {
+    page_title: '404 - Page Not Found',
+    page_location: window.location.href
+  });
+}
+</script>

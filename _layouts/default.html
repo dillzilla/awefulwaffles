@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: 'en' }}">
+
+<head>
+  <!-- Basic meta tags for SEO -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <!-- SEO meta tags -->
+  <meta name="description" content="{{ page.description | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
+  <meta name="keywords" content="waffles, restaurant, diner, breakfast, retro, vintage, {{ site.title }}">
+  <meta name="author" content="{{ site.title }}">
+  
+  <!-- Open Graph meta tags for social media -->
+  <meta property="og:title" content="{{ page.title | default: site.title | escape }}">
+  <meta property="og:description" content="{{ page.description | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{ canonical_url }}">
+  <meta property="og:image" content="{{ '/assets/images/og-image.jpg' | absolute_url }}">
+  <meta property="og:site_name" content="{{ site.title }}">
+  
+  <!-- Twitter Card meta tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ page.title | default: site.title | escape }}">
+  <meta name="twitter:description" content="{{ page.description | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
+  <meta name="twitter:image" content="{{ '/assets/images/twitter-card.jpg' | absolute_url }}">
+  
+  <!-- Local Business Schema.org structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "{{ site.title }}",
+    "description": "{{ site.description | strip_html | normalize_whitespace | escape }}",
+    "url": "{{ site.url }}",
+    "telephone": "{{ site.restaurant.phone }}",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "{{ site.restaurant.address }}"
+    },
+    "openingHours": [
+      "Mo-Fr {{ site.restaurant.hours.monday }}",
+      "Sa {{ site.restaurant.hours.saturday }}",
+      "Su {{ site.restaurant.hours.sunday }}"
+    ],
+    "servesCuisine": "American",
+    "priceRange": "$$"
+  }
+  </script>
+
+  <!-- Page title -->
+  {%- if page.title -%}
+    <title>{{ page.title | escape }} | {{ site.title | escape }}</title>
+  {%- else -%}
+    <title>{{ site.title | escape }}</title>
+  {%- endif -%}
+
+  <!-- Tailwind CSS CDN for quick setup -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Custom Tailwind configuration for retro theme -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'retro-orange': '#FF6B35',
+            'retro-yellow': '#F7BA3E', 
+            'retro-brown': '#8B4513',
+            'retro-cream': '#FFF8DC',
+            'retro-red': '#DC143C'
+          },
+          fontFamily: {
+            'retro': ['Georgia', 'serif'],
+            'display': ['Impact', 'Arial Black', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Custom CSS for retro styling -->
+  <style>
+    /* Retro text shadow and effects */
+    .retro-shadow {
+      text-shadow: 3px 3px 0px #8B4513, 6px 6px 0px rgba(0,0,0,0.2);
+    }
+    
+    /* Vintage button styling */
+    .retro-button {
+      box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+      transition: all 0.3s ease;
+    }
+    
+    .retro-button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 15px 20px rgba(0,0,0,0.2);
+    }
+    
+    /* Checkered pattern background */
+    .checkered-bg {
+      background-image: 
+        linear-gradient(45deg, #FFF8DC 25%, transparent 25%), 
+        linear-gradient(-45deg, #FFF8DC 25%, transparent 25%), 
+        linear-gradient(45deg, transparent 75%, #F5F5DC 75%), 
+        linear-gradient(-45deg, transparent 75%, #F5F5DC 75%);
+      background-size: 20px 20px;
+      background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
+    }
+  </style>
+
+  <!-- Jekyll SEO tag plugin -->
+  {%- seo -%}
+
+  <!-- RSS feed link -->
+  {%- feed_meta -%}
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="{{ '/assets/images/favicon.ico' | relative_url }}">
+</head>
+
+<body class="bg-retro-cream font-retro">
+  
+  <!-- Header Navigation -->
+  <header class="bg-retro-orange shadow-lg sticky top-0 z-50">
+    <div class="container mx-auto px-4">
+      <nav class="flex items-center justify-between py-4">
+        
+        <!-- Logo/Brand -->
+        <div class="flex items-center">
+          <a href="{{ '/' | relative_url }}" class="text-3xl font-display font-bold text-white retro-shadow hover:text-retro-yellow transition-colors duration-300">
+            🧇 Awefull Waffles
+          </a>
+        </div>
+
+        <!-- Desktop Navigation Menu -->
+        <div class="hidden md:flex space-x-8">
+          <a href="{{ '/' | relative_url }}" class="text-white hover:text-retro-yellow transition-colors duration-300 font-semibold {% if page.url == '/' %}border-b-2 border-retro-yellow{% endif %}">
+            Home
+          </a>
+          <a href="{{ '/menu.html' | relative_url }}" class="text-white hover:text-retro-yellow transition-colors duration-300 font-semibold {% if page.url contains 'menu' %}border-b-2 border-retro-yellow{% endif %}">
+            Menu
+          </a>
+          <a href="{{ '/about.html' | relative_url }}" class="text-white hover:text-retro-yellow transition-colors duration-300 font-semibold {% if page.url contains 'about' %}border-b-2 border-retro-yellow{% endif %}">
+            About Us
+          </a>
+          <a href="{{ '/contact.html' | relative_url }}" class="text-white hover:text-retro-yellow transition-colors duration-300 font-semibold {% if page.url contains 'contact' %}border-b-2 border-retro-yellow{% endif %}">
+            Contact
+          </a>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <div class="md:hidden">
+          <button id="mobile-menu-button" class="text-white hover:text-retro-yellow focus:outline-none">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+          </button>
+        </div>
+      </nav>
+
+      <!-- Mobile Navigation Menu -->
+      <div id="mobile-menu" class="hidden md:hidden pb-4">
+        <a href="{{ '/' | relative_url }}" class="block py-2 text-white hover:text-retro-yellow transition-colors duration-300 font-semibold">Home</a>
+        <a href="{{ '/menu.html' | relative_url }}" class="block py-2 text-white hover:text-retro-yellow transition-colors duration-300 font-semibold">Menu</a>
+        <a href="{{ '/about.html' | relative_url }}" class="block py-2 text-white hover:text-retro-yellow transition-colors duration-300 font-semibold">About Us</a>
+        <a href="{{ '/contact.html' | relative_url }}" class="block py-2 text-white hover:text-retro-yellow transition-colors duration-300 font-semibold">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content Area -->
+  <main class="min-h-screen">
+    {{ content }}
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-retro-brown text-white py-12">
+    <div class="container mx-auto px-4">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <!-- Contact Information -->
+        <div>
+          <h3 class="text-xl font-bold mb-4 text-retro-yellow">Contact Info</h3>
+          <p class="mb-2">📍 {{ site.restaurant.address }}</p>
+          <p class="mb-2">📞 {{ site.restaurant.phone }}</p>
+          <p class="mb-2">✉️ {{ site.email }}</p>
+        </div>
+
+        <!-- Hours of Operation -->
+        <div>
+          <h3 class="text-xl font-bold mb-4 text-retro-yellow">Hours</h3>
+          <p class="mb-1">Mon-Fri: {{ site.restaurant.hours.monday }}</p>
+          <p class="mb-1">Saturday: {{ site.restaurant.hours.saturday }}</p>
+          <p class="mb-1">Sunday: {{ site.restaurant.hours.sunday }}</p>
+        </div>
+
+        <!-- Social Media Links -->
+        <div>
+          <h3 class="text-xl font-bold mb-4 text-retro-yellow">Follow Us</h3>
+          <div class="flex space-x-4">
+            <a href="https://facebook.com/awefullwaffles" class="text-white hover:text-retro-yellow transition-colors duration-300" aria-label="Facebook">
+              📘 Facebook
+            </a>
+            <a href="https://instagram.com/awefullwaffles" class="text-white hover:text-retro-yellow transition-colors duration-300" aria-label="Instagram">
+              📷 Instagram
+            </a>
+            <a href="https://twitter.com/awefullwaffles" class="text-white hover:text-retro-yellow transition-colors duration-300" aria-label="Twitter">
+              🐦 Twitter
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Copyright -->
+      <div class="border-t border-retro-orange mt-8 pt-8 text-center">
+        <p>&copy; {{ site.time | date: "%Y" }} {{ site.title }}. All rights reserved. Made with ❤️ and lots of syrup!</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Mobile Menu JavaScript -->
+  <script>
+    // Mobile menu toggle functionality
+    document.getElementById('mobile-menu-button').addEventListener('click', function() {
+      const mobileMenu = document.getElementById('mobile-menu');
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    // Close mobile menu when clicking on a link
+    document.querySelectorAll('#mobile-menu a').forEach(link => {
+      link.addEventListener('click', function() {
+        document.getElementById('mobile-menu').classList.add('hidden');
+      });
+    });
+  </script>
+
+</body>
+</html>
