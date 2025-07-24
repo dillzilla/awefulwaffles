@@ -59,54 +59,112 @@
   <!-- Tailwind CSS CDN for quick setup -->
   <script src="https://cdn.tailwindcss.com"></script>
   
-  <!-- Custom Tailwind configuration for retro theme -->
+  <!-- Modern Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Custom Tailwind configuration for modern retro theme -->
   <script>
     tailwind.config = {
       theme: {
         extend: {
           colors: {
-            'retro-orange': '#FF6B35',
-            'retro-yellow': '#F7BA3E', 
-            'retro-brown': '#8B4513',
-            'retro-cream': '#FFF8DC',
-            'retro-red': '#DC143C'
+            'primary': '#FF6B35',
+            'primary-dark': '#E55A2B',
+            'secondary': '#F7BA3E', 
+            'accent': '#8B4513',
+            'neutral-light': '#F8F9FA',
+            'neutral-dark': '#2C3E50',
+            'warm-white': '#FEFEFE',
+            'soft-gray': '#6B7280'
           },
           fontFamily: {
-            'retro': ['Georgia', 'serif'],
-            'display': ['Impact', 'Arial Black', 'sans-serif']
+            'sans': ['Inter', 'system-ui', 'sans-serif'],
+            'display': ['Playfair Display', 'Georgia', 'serif']
+          },
+          animation: {
+            'fade-in': 'fadeIn 0.5s ease-in-out',
+            'slide-up': 'slideUp 0.6s ease-out',
+            'bounce-slow': 'bounce 2s infinite',
+          },
+          keyframes: {
+            fadeIn: {
+              '0%': { opacity: '0' },
+              '100%': { opacity: '1' },
+            },
+            slideUp: {
+              '0%': { transform: 'translateY(20px)', opacity: '0' },
+              '100%': { transform: 'translateY(0)', opacity: '1' },
+            }
           }
         }
       }
     }
   </script>
 
-  <!-- Custom CSS for retro styling -->
+  <!-- Custom CSS for modern styling -->
   <style>
-    /* Retro text shadow and effects */
-    .retro-shadow {
-      text-shadow: 3px 3px 0px #8B4513, 6px 6px 0px rgba(0,0,0,0.2);
+    /* Modern text effects */
+    .modern-shadow {
+      text-shadow: 0 2px 4px rgba(0,0,0,0.1);
     }
     
-    /* Vintage button styling */
-    .retro-button {
-      box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+    /* Modern button styling */
+    .modern-button {
+      box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -1px rgba(0,0,0,0.06);
       transition: all 0.3s ease;
+      backdrop-filter: blur(10px);
     }
     
-    .retro-button:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 15px 20px rgba(0,0,0,0.2);
+    .modern-button:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -2px rgba(0,0,0,0.05);
     }
     
-    /* Checkered pattern background */
-    .checkered-bg {
-      background-image: 
-        linear-gradient(45deg, #FFF8DC 25%, transparent 25%), 
-        linear-gradient(-45deg, #FFF8DC 25%, transparent 25%), 
-        linear-gradient(45deg, transparent 75%, #F5F5DC 75%), 
-        linear-gradient(-45deg, transparent 75%, #F5F5DC 75%);
-      background-size: 20px 20px;
-      background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
+    /* Gradient backgrounds */
+    .gradient-primary {
+      background: linear-gradient(135deg, #FF6B35 0%, #E55A2B 100%);
+    }
+    
+    .gradient-secondary {
+      background: linear-gradient(135deg, #F7BA3E 0%, #E5A529 100%);
+    }
+    
+    /* Modern card styling */
+    .modern-card {
+      backdrop-filter: blur(10px);
+      background: rgba(255, 255, 255, 0.9);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+    
+    /* Floating animation */
+    .float {
+      animation: float 3s ease-in-out infinite;
+    }
+    
+    @keyframes float {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-10px); }
+    }
+    
+    /* Modern glassmorphism effect */
+    .glass {
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+    
+    /* Smooth scroll behavior */
+    html {
+      scroll-behavior: smooth;
+    }
+    
+    /* Modern form styling */
+    .modern-input:focus {
+      outline: none;
+      border-color: #FF6B35;
+      box-shadow: 0 0 0 3px rgba(255, 107, 53, 0.1);
     }
   </style>
 
@@ -120,40 +178,41 @@
   <link rel="icon" type="image/x-icon" href="{{ '/assets/images/favicon.ico' | relative_url }}">
 </head>
 
-<body class="bg-retro-cream font-retro">
+<body class="bg-neutral-light font-sans antialiased">
   
   <!-- Header Navigation -->
-  <header class="bg-retro-orange shadow-lg sticky top-0 z-50">
-    <div class="container mx-auto px-4">
+  <header class="gradient-primary shadow-xl sticky top-0 z-50 glass">
+    <div class="container mx-auto px-4 lg:px-8">
       <nav class="flex items-center justify-between py-4">
         
         <!-- Logo/Brand -->
-        <div class="flex items-center">
-          <a href="{{ '/' | relative_url }}" class="text-3xl font-display font-bold text-white retro-shadow hover:text-retro-yellow transition-colors duration-300">
-            🧇 Awefull Waffles
+        <div class="flex items-center space-x-2">
+          <div class="text-4xl float">🧇</div>
+          <a href="{{ '/' | relative_url }}" class="text-2xl lg:text-3xl font-display font-bold text-white modern-shadow hover:text-secondary transition-all duration-300 transform hover:scale-105">
+            Awefull Waffles
           </a>
         </div>
 
         <!-- Desktop Navigation Menu -->
-        <div class="hidden md:flex space-x-8">
-          <a href="{{ '/' | relative_url }}" class="text-white hover:text-retro-yellow transition-colors duration-300 font-semibold {% if page.url == '/' %}border-b-2 border-retro-yellow{% endif %}">
+        <div class="hidden md:flex items-center space-x-1">
+          <a href="{{ '/' | relative_url }}" class="px-4 py-2 rounded-full text-white hover:text-secondary hover:bg-white/10 transition-all duration-300 font-medium {% if page.url == '/' %}bg-secondary text-neutral-dark{% endif %}">
             Home
           </a>
-          <a href="{{ '/menu.html' | relative_url }}" class="text-white hover:text-retro-yellow transition-colors duration-300 font-semibold {% if page.url contains 'menu' %}border-b-2 border-retro-yellow{% endif %}">
+          <a href="{{ '/menu.html' | relative_url }}" class="px-4 py-2 rounded-full text-white hover:text-secondary hover:bg-white/10 transition-all duration-300 font-medium {% if page.url contains 'menu' %}bg-secondary text-neutral-dark{% endif %}">
             Menu
           </a>
-          <a href="{{ '/about.html' | relative_url }}" class="text-white hover:text-retro-yellow transition-colors duration-300 font-semibold {% if page.url contains 'about' %}border-b-2 border-retro-yellow{% endif %}">
-            About Us
+          <a href="{{ '/about.html' | relative_url }}" class="px-4 py-2 rounded-full text-white hover:text-secondary hover:bg-white/10 transition-all duration-300 font-medium {% if page.url contains 'about' %}bg-secondary text-neutral-dark{% endif %}">
+            About
           </a>
-          <a href="{{ '/contact.html' | relative_url }}" class="text-white hover:text-retro-yellow transition-colors duration-300 font-semibold {% if page.url contains 'contact' %}border-b-2 border-retro-yellow{% endif %}">
+          <a href="{{ '/contact.html' | relative_url }}" class="px-4 py-2 rounded-full text-white hover:text-secondary hover:bg-white/10 transition-all duration-300 font-medium {% if page.url contains 'contact' %}bg-secondary text-neutral-dark{% endif %}">
             Contact
           </a>
         </div>
 
         <!-- Mobile Menu Button -->
         <div class="md:hidden">
-          <button id="mobile-menu-button" class="text-white hover:text-retro-yellow focus:outline-none">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <button id="mobile-menu-button" class="text-white hover:text-secondary focus:outline-none p-2 rounded-lg hover:bg-white/10 transition-all duration-300">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
             </svg>
           </button>
@@ -162,10 +221,12 @@
 
       <!-- Mobile Navigation Menu -->
       <div id="mobile-menu" class="hidden md:hidden pb-4">
-        <a href="{{ '/' | relative_url }}" class="block py-2 text-white hover:text-retro-yellow transition-colors duration-300 font-semibold">Home</a>
-        <a href="{{ '/menu.html' | relative_url }}" class="block py-2 text-white hover:text-retro-yellow transition-colors duration-300 font-semibold">Menu</a>
-        <a href="{{ '/about.html' | relative_url }}" class="block py-2 text-white hover:text-retro-yellow transition-colors duration-300 font-semibold">About Us</a>
-        <a href="{{ '/contact.html' | relative_url }}" class="block py-2 text-white hover:text-retro-yellow transition-colors duration-300 font-semibold">Contact</a>
+        <div class="flex flex-col space-y-2">
+          <a href="{{ '/' | relative_url }}" class="block px-4 py-3 text-white hover:text-secondary hover:bg-white/10 transition-all duration-300 font-medium rounded-lg">Home</a>
+          <a href="{{ '/menu.html' | relative_url }}" class="block px-4 py-3 text-white hover:text-secondary hover:bg-white/10 transition-all duration-300 font-medium rounded-lg">Menu</a>
+          <a href="{{ '/about.html' | relative_url }}" class="block px-4 py-3 text-white hover:text-secondary hover:bg-white/10 transition-all duration-300 font-medium rounded-lg">About</a>
+          <a href="{{ '/contact.html' | relative_url }}" class="block px-4 py-3 text-white hover:text-secondary hover:bg-white/10 transition-all duration-300 font-medium rounded-lg">Contact</a>
+        </div>
       </div>
     </div>
   </header>
@@ -176,46 +237,74 @@
   </main>
 
   <!-- Footer -->
-  <footer class="bg-retro-brown text-white py-12">
-    <div class="container mx-auto px-4">
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+  <footer class="bg-neutral-dark text-white py-16">
+    <div class="container mx-auto px-4 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
         
         <!-- Contact Information -->
-        <div>
-          <h3 class="text-xl font-bold mb-4 text-retro-yellow">Contact Info</h3>
-          <p class="mb-2">📍 {{ site.restaurant.address }}</p>
-          <p class="mb-2">📞 {{ site.restaurant.phone }}</p>
-          <p class="mb-2">✉️ {{ site.email }}</p>
+        <div class="space-y-4">
+          <h3 class="text-2xl font-display font-semibold mb-6 text-secondary">Contact Info</h3>
+          <div class="space-y-3">
+            <div class="flex items-center space-x-3">
+              <span class="text-2xl">📍</span>
+              <p class="text-gray-300">{{ site.restaurant.address }}</p>
+            </div>
+            <div class="flex items-center space-x-3">
+              <span class="text-2xl">📞</span>
+              <p class="text-gray-300">{{ site.restaurant.phone }}</p>
+            </div>
+            <div class="flex items-center space-x-3">
+              <span class="text-2xl">✉️</span>
+              <p class="text-gray-300">{{ site.email }}</p>
+            </div>
+          </div>
         </div>
 
         <!-- Hours of Operation -->
-        <div>
-          <h3 class="text-xl font-bold mb-4 text-retro-yellow">Hours</h3>
-          <p class="mb-1">Mon-Fri: {{ site.restaurant.hours.monday }}</p>
-          <p class="mb-1">Saturday: {{ site.restaurant.hours.saturday }}</p>
-          <p class="mb-1">Sunday: {{ site.restaurant.hours.sunday }}</p>
+        <div class="space-y-4">
+          <h3 class="text-2xl font-display font-semibold mb-6 text-secondary">Hours</h3>
+          <div class="space-y-2">
+            <div class="flex justify-between">
+              <span class="text-gray-300">Mon-Fri:</span>
+              <span class="text-white font-medium">{{ site.restaurant.hours.monday }}</span>
+            </div>
+            <div class="flex justify-between">
+              <span class="text-gray-300">Saturday:</span>
+              <span class="text-white font-medium">{{ site.restaurant.hours.saturday }}</span>
+            </div>
+            <div class="flex justify-between">
+              <span class="text-gray-300">Sunday:</span>
+              <span class="text-white font-medium">{{ site.restaurant.hours.sunday }}</span>
+            </div>
+          </div>
         </div>
 
         <!-- Social Media Links -->
-        <div>
-          <h3 class="text-xl font-bold mb-4 text-retro-yellow">Follow Us</h3>
-          <div class="flex space-x-4">
-            <a href="https://facebook.com/awefullwaffles" class="text-white hover:text-retro-yellow transition-colors duration-300" aria-label="Facebook">
-              📘 Facebook
+        <div class="space-y-4">
+          <h3 class="text-2xl font-display font-semibold mb-6 text-secondary">Follow Us</h3>
+          <div class="flex flex-col space-y-3">
+            <a href="https://facebook.com/awefullwaffles" class="flex items-center space-x-3 text-gray-300 hover:text-secondary transition-colors duration-300 group" aria-label="Facebook">
+              <span class="text-2xl group-hover:scale-110 transition-transform duration-300">📘</span>
+              <span>Facebook</span>
             </a>
-            <a href="https://instagram.com/awefullwaffles" class="text-white hover:text-retro-yellow transition-colors duration-300" aria-label="Instagram">
-              📷 Instagram
+            <a href="https://instagram.com/awefullwaffles" class="flex items-center space-x-3 text-gray-300 hover:text-secondary transition-colors duration-300 group" aria-label="Instagram">
+              <span class="text-2xl group-hover:scale-110 transition-transform duration-300">📷</span>
+              <span>Instagram</span>
             </a>
-            <a href="https://twitter.com/awefullwaffles" class="text-white hover:text-retro-yellow transition-colors duration-300" aria-label="Twitter">
-              🐦 Twitter
+            <a href="https://twitter.com/awefullwaffles" class="flex items-center space-x-3 text-gray-300 hover:text-secondary transition-colors duration-300 group" aria-label="Twitter">
+              <span class="text-2xl group-hover:scale-110 transition-transform duration-300">🐦</span>
+              <span>Twitter</span>
             </a>
           </div>
         </div>
       </div>
 
       <!-- Copyright -->
-      <div class="border-t border-retro-orange mt-8 pt-8 text-center">
-        <p>&copy; {{ site.time | date: "%Y" }} {{ site.title }}. All rights reserved. Made with ❤️ and lots of syrup!</p>
+      <div class="border-t border-gray-700 mt-12 pt-8">
+        <div class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+          <p class="text-gray-400">&copy; {{ site.time | date: "%Y" }} {{ site.title }}. All rights reserved.</p>
+          <p class="text-gray-400">Made with <span class="text-red-400">❤️</span> and lots of syrup!</p>
+        </div>
       </div>
     </div>
   </footer>

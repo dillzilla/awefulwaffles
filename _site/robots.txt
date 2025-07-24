@@ -5,7 +5,7 @@ User-agent: *
 Allow: /
 
 # Sitemap location
-Sitemap: https://awefullwaffles.com/sitemap.xml
+Sitemap: http://0.0.0.0:4000/sitemap.xml
 
 # Disallow access to Jekyll system files and directories
 Disallow: /_site/

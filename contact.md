@@ -155,14 +155,14 @@ keywords: "restaurant location, hours, phone number, reservations, directions, p
           <!-- Name and Email Row -->
           <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div>
-              <label for="name" class="block text-retro-brown font-bold mb-2">Your Name *</label>
+              <label for="name" class="block text-neutral-dark font-semibold mb-2">Your Name *</label>
               <input type="text" id="name" name="name" required 
-                     class="w-full px-4 py-3 border-2 border-retro-orange rounded-lg focus:outline-none focus:ring-2 focus:ring-retro-yellow">
+                     class="w-full px-4 py-3 border-2 border-gray-200 rounded-xl modern-input transition-all duration-300">
             </div>
             <div>
-              <label for="email" class="block text-retro-brown font-bold mb-2">Email Address *</label>
+              <label for="email" class="block text-neutral-dark font-semibold mb-2">Email Address *</label>
               <input type="email" id="email" name="email" required 
-                     class="w-full px-4 py-3 border-2 border-retro-orange rounded-lg focus:outline-none focus:ring-2 focus:ring-retro-yellow">
+                     class="w-full px-4 py-3 border-2 border-gray-200 rounded-xl modern-input transition-all duration-300">
             </div>
           </div>
 

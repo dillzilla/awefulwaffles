@@ -3,32 +3,32 @@
   
   <!-- Home page -->
   <url>
-    <loc>https://awefullwaffles.com/awefulwaffles/</loc>
-    <lastmod>2025-07-24T04:27:57+00:00</lastmod>
+    <loc>http://0.0.0.0:4000/awefulwaffles/</loc>
+    <lastmod>2025-07-24T15:32:58+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   
   <!-- Menu page -->
   <url>
-    <loc>https://awefullwaffles.com/awefulwaffles/menu.html</loc>
-    <lastmod>2025-07-24T04:27:57+00:00</lastmod>
+    <loc>http://0.0.0.0:4000/awefulwaffles/menu.html</loc>
+    <lastmod>2025-07-24T15:32:58+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   
   <!-- About page -->
   <url>
-    <loc>https://awefullwaffles.com/awefulwaffles/about.html</loc>
-    <lastmod>2025-07-24T04:27:57+00:00</lastmod>
+    <loc>http://0.0.0.0:4000/awefulwaffles/about.html</loc>
+    <lastmod>2025-07-24T15:32:58+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   
   <!-- Contact page -->
   <url>
-    <loc>https://awefullwaffles.com/awefulwaffles/contact.html</loc>
-    <lastmod>2025-07-24T04:27:57+00:00</lastmod>
+    <loc>http://0.0.0.0:4000/awefulwaffles/contact.html</loc>
+    <lastmod>2025-07-24T15:32:58+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
